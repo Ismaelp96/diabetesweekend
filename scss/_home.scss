@@ -1,0 +1,308 @@
+.s-hero {
+  padding-top: 4rem;
+  padding-bottom: 4.6rem;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .bottom-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.8rem;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.type-diabetes {
+  background-color: var(--brand-white);
+  padding-top: 5.6rem;
+  padding-bottom: 6.6rem;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top-diabetes {
+    margin-bottom: 6.9rem;
+    .text-content {
+      width: 100%;
+      max-width: 99.9rem;
+      h3 {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        color: var(--brand-blue);
+        margin-bottom: 3.7rem;
+        text-align: center;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 200%;
+        color: var(--gray01);
+        max-width: 89.4rem;
+        margin: 2.2rem auto;
+        text-align: center;
+        &:not(:first-child) {
+          margin: 2.2rem auto;
+        }
+      }
+    }
+  }
+  .bottom-diabetes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100.4rem;
+    .left-content {
+      width: 100%;
+      max-width: 41.7rem;
+      h3 {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        color: var(--brand-blue);
+        margin-bottom: 2.9rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: var(--gray01);
+      }
+    }
+    .swiper-card {
+      position: relative;
+      width: 100%;
+      max-width: 48.8rem;
+      height: 38.8rem;
+      background-color: var(--brand-yellow);
+      border-radius: 2.6rem;
+      overflow: hidden;
+      .swiper-slide {
+        transition: all 0.6s ease;
+        &-prev,
+        &-next {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .text {
+          width: 100%;
+          max-width: 41.2rem;
+          margin-left: 3.7rem;
+          height: 41.3rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+          padding-top: 4.7rem;
+          h2 {
+            font-weight: 700;
+            font-size: 3.9rem;
+            line-height: 100%;
+            color: var(--brand-blue);
+            margin-bottom: 4rem;
+            text-align: center;
+          }
+          span {
+            display: block;
+            font-weight: 500;
+            font-size: 5.8rem;
+            line-height: 7rem;
+            color: #ffffff;
+            margin-bottom: 3.3rem;
+            text-align: center;
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 150%;
+            color: var(--gray01);
+            text-align: center;
+            max-width: 41.2rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .bottom-diabetes {
+      max-width: 93.4rem;
+    }
+  }
+  @media (max-width: 800px) {
+    .top-diabetes {
+      margin-bottom: 4.9rem;
+    }
+    .bottom-diabetes {
+      flex-direction: column;
+      .left-content {
+        max-width: 99.9rem;
+        margin-bottom: 4rem;
+        h3 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .top-diabetes {
+      margin-bottom: 3rem;
+      .text-content {
+        width: 100%;
+        h3 {
+          margin-bottom: 1.8rem;
+        }
+        p {
+          &:not(:first-child) {
+            margin-top: 1.8rem;
+          }
+        }
+      }
+    }
+    .bottom-diabetes {
+      flex-direction: column;
+      .left-content {
+        max-width: 100%;
+        margin-bottom: 4rem;
+        h3 {
+          text-align: center;
+          font-size: 2rem;
+          line-height: 2.6rem;
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 440px) {
+    .bottom-diabetes {
+      .swiper-card {
+        max-width: 100%;
+        .swiper-slide {
+          .text {
+            padding-top: 0;
+            margin-left: 0;
+            height: 100%;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h2 {
+              margin-bottom: 2.2rem;
+            }
+            span {
+              margin-bottom: 1.2rem;
+              font-size: 5rem;
+            }
+            p {
+              max-width: 88%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.inscricoes {
+  padding-top: 10.6rem;
+  padding-bottom: 3.1rem;
+  background-color: var(--brand-white);
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-inscricoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .text {
+      width: 100%;
+      max-width: 80rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 1.6rem;
+      h2 {
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 6.5rem;
+        color: var(--brand-blue);
+        text-align: center;
+        margin-bottom: 3.9rem;
+      }
+      p {
+        max-width: 77.9rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        text-align: center;
+        color: var(--gray01);
+        margin-bottom: 4.8rem;
+      }
+    }
+    .back-top {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      cursor: pointer;
+      .image {
+        width: 5.9rem;
+        height: 5.9rem;
+        background-color: var(--brand-yellow);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        &:hover {
+          box-shadow: 0px 5px 10px rgba(245, 237, 89, 0.6);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding-top: 4rem;
+    .content-inscricoes {
+      .text {
+        h2 {
+          font-size: 4rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 460px) {
+    .content-inscricoes {
+      .text {
+        h2 {
+          font-size: 3rem;
+          line-height: 5rem;
+        }
+        p {
+          margin-bottom: 2rem;
+        }
+      }
+      .back-top {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

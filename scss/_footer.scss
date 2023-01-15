@@ -1,0 +1,189 @@
+footer {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 4.2rem;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .left-content {
+    width: 100%;
+    max-width: 31.4rem;
+    flex: 1;
+
+    img {
+      width: 150px;
+      margin-top: 3.2rem;
+    }
+    p {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 144%;
+      color: var(--brand-blue);
+      margin-top: 2.2rem;
+      margin-bottom: 3.9rem;
+    }
+    span {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: var(--brand-blue);
+    }
+  }
+  .right-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 67.9rem;
+    flex: 1;
+    .nav-footer {
+      ul {
+        li {
+          &:not(:first-child) {
+            margin-top: 3.2rem;
+          }
+          a {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            text-transform: uppercase;
+            color: var(--brand-blue);
+            transition: filter 0.3s ease;
+            &:hover {
+              filter: brightness(0.5);
+            }
+          }
+        }
+      }
+    }
+    .right {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      max-width: 32.5rem;
+      flex: 1;
+      a {
+        margin-bottom: 7.5rem;
+      }
+      .sociais {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 26.4rem;
+
+        margin-bottom: 8.7rem;
+        span {
+          font-weight: 600;
+          font-size: 1.7rem;
+          line-height: 144%;
+          color: var(--brand-blue);
+          letter-spacing: normal;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          margin-left: 1.4rem;
+          li {
+            flex: flex;
+            align-items: center;
+            &:not(:first-child) {
+              margin-left: 2.6rem;
+            }
+            a {
+              img {
+                transition: transform 0.3s ease;
+                &:hover {
+                  transform: scale(1.05);
+                }
+              }
+            }
+          }
+        }
+      }
+      .politicas-and-bordo {
+        display: flex;
+        align-items: center;
+        padding-right: 2.5rem;
+        flex: 1;
+        max-width: 100%;
+        a {
+          font-weight: 400;
+          font-size: 1.7rem;
+          line-height: 2.3rem;
+          color: var(--brand-blue);
+          transition: filter 0.3s ease;
+          &:not(:first-child) {
+            margin-left: 5.5rem;
+          }
+          &:hover {
+            filter: brightness(0.5);
+          }
+          img {
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: scale(1.04);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .right-content {
+      max-width: 54.9rem;
+    }
+  }
+  @media (max-width: 800px) {
+    .right-content {
+      .nav-footer {
+        display: none;
+      }
+      .right {
+        max-width: 100%;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding: 4rem 0;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .left-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 3.6rem;
+      max-width: 100%;
+      p {
+        text-align: center;
+        margin-bottom: 2.2rem;
+      }
+    }
+    .right-content {
+      .right {
+        margin-top: 0rem;
+        align-items: center;
+        a {
+          margin-bottom: 3rem;
+        }
+        .sociais {
+          margin-bottom: 3rem;
+        }
+        .politicas-and-bordo {
+          padding-right: 0;
+          a {
+            &:not(:first-child) {
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

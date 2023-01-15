@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.05em;
+}
+html {
+  font-size: 62.5%;
+  @media (max-width: 320px) {
+    font-size: 55%;
+  }
+}
+body {
+  background: var(--brand-yellow);
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
