@@ -1,1 +1,1 @@
-Colônia Diabetes weekend - Projeto desenvolvido por "Jamas" - A bordo Deisgn
+Colônia Diabetes weekend - Projeto desenvolvido por "Jamas" - A Bordo Deisgn
