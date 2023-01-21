@@ -715,7 +715,7 @@ body::-webkit-scrollbar-thumb {
     }
     .content {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       width: 100%;
       max-width: 96.7rem;
@@ -731,6 +731,9 @@ body::-webkit-scrollbar-thumb {
         }
       }
       .right {
+        width: 100%;
+        max-width: 71.5rem;
+        margin-left: 4.5rem;
         h3 {
           font-weight: 700;
           font-size: 2.3rem;
@@ -831,6 +834,7 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         .right {
           margin-top: 2rem;
+          margin-left: 0;
           h3 {
             text-align: center;
           }

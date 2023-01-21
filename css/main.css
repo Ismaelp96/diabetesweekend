@@ -891,9 +891,9 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -911,6 +911,11 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.modal .box .content .right {
+  width: 100%;
+  max-width: 71.5rem;
+  margin-left: 4.5rem;
 }
 .modal .box .content .right h3 {
   font-weight: 700;
@@ -1027,6 +1032,7 @@ body::-webkit-scrollbar-thumb {
   }
   .modal .box .content .right {
     margin-top: 2rem;
+    margin-left: 0;
   }
   .modal .box .content .right h3 {
     text-align: center;
